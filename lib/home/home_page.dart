@@ -31,6 +31,7 @@ int currentIndex=0;
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       appBar: AppBar(
+        backgroundColor: MyThemeData.colorBlue,
         toolbarHeight: 120,
         title: Text('To Do List',
         style: Theme.of(context).textTheme.subtitle1?.copyWith(
