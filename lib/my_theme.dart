@@ -34,11 +34,9 @@ class MyThemeData{
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: colorWhite,
-      selectedItemColor: colorBlue,
-      // unselectedItemColor: Colors.white,
+      selectedItemColor:colorBlue,
     ),
   );
-
 
   static var darkTheme=ThemeData(
     primaryColor: colorBlack,

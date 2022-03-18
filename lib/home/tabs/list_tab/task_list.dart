@@ -10,16 +10,17 @@ class TaskList extends StatelessWidget {
         children: [
           CalendarTimeline(
             initialDate: DateTime.now(),
-            firstDate: DateTime.now().subtract(Duration(days: 365)),
-            lastDate: DateTime.now().add(Duration(days: 365)),
-            onDateSelected: (date) {
+            firstDate: DateTime.now().subtract(Duration(days: 365),),
+            lastDate: DateTime.now().add(Duration(days: 365),),
+            onDateSelected: (date){
+
             },
             leftMargin: 20,
             monthColor: MyThemeData.colorBlack,
             dayColor: MyThemeData.colorBlack,
             activeDayColor: Theme.of(context).primaryColor,
             activeBackgroundDayColor: MyThemeData.colorWhite,
-            dotsColor: MyThemeData.colorBlack,
+            dotsColor: Color(0xFF333A47),
             selectableDayPredicate: (date) => date.day != 23,
             locale: 'en_ISO',
           )
